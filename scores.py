@@ -7,7 +7,7 @@ if len(sys.argv) == 4:
       score.append(int(sys.argv[i]))
 
     sum = score[0] + score[1] + score[2]
-    average = total / len(score)
+    average = sum / len(score)
 
     print(f"Sum: {sum}")
     print(f"Average: {average}")
