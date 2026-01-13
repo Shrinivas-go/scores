@@ -1,11 +1,14 @@
 import sys
-score =[]
+
+score = []
+
 if len(sys.argv) == 4:
-  script_name = sys.argv[0]
-  score[0] = int(sys.argv[1])
-  score[1] = int(sys.argv[2])
-  score[2] = int(sys.argv[3])
-  sum = score[0] + score[1] + score[2]
-  average = sum / len(score)
-  print(f"Sum: {sum}")
-  print(f"Average: {average}")
+    score.append(int(sys.argv[1]))
+    score.append(int(sys.argv[2]))
+    score.append(int(sys.argv[3]))
+
+    total = score[0] + score[1] + score[2]
+    average = total / len(score)
+
+    print(f"Sum: {total}")
+    print(f"Average: {average}")
